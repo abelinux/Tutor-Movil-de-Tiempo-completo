@@ -2,10 +2,17 @@
 <resources>
 
     <string name="app_name">Tutor de Tiempo Completo</string>
+    <string name="welcome">Bienvenido</string>
     <string name="action_settings">Ajustes</string>
+    <string name="url">http://10.0.0.12/tutor/</string>
     <string name="hello_world">Hello world!</string>
     <string name="main_mensajes">MENSAJES</string>
     <string name="main_mejoras">MEJORAS</string>
     <string name="main_monitoreo">MONITOREO</string>
 
+    <string name="login_usuario">7711568966</string>
+    <string name="login_clave">101187</string>
+    
+    <string name="mensajes_enviar">ENVIAR</string>
+    
 </resources>

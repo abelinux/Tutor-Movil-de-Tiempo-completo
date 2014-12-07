@@ -23,9 +23,8 @@ import android.view.Menu;
 import android.view.View;
 
 public class MainActivity extends ActionBarActivity  implements ActionBar.TabListener, OnPageChangeListener {
-
-
 	private ViewPager mViewPager;
+	String id_tutor, nombre, cct, id_alumno; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,8 +35,13 @@ public class MainActivity extends ActionBarActivity  implements ActionBar.TabLis
         
         mViewPager.setOnPageChangeListener(this);
         
+        nombre = getIntent().getStringExtra("nombre");
+		id_tutor = getIntent().getStringExtra("id_tutor");
+		cct = getIntent().getStringExtra("cct");
+		id_alumno = getIntent().getStringExtra("id_alumno");
+        
         ActionBar actionBar = getSupportActionBar();
-		actionBar.setTitle("BIENVENIDO");
+		actionBar.setTitle(nombre);
 		actionBar.setSubtitle("TUTOR MOVIL DE TIEMPO COMPLETO");
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
