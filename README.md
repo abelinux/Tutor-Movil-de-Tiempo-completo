@@ -1,8 +1,8 @@
 Tutor Movil de Tiempo completo
 ==============================
 
-<img class="inline-img" src="https://dchtm6r471mui.cloudfront.net/hackpad.com_yGrkgnCFi2A_p.289460_1417982401305_Screenshot_2014-12-07-13-57-38.png" width="450px" faketext="*" contenteditable="false">
-Tutor Móvil de Tiempo Completo
+<img class="inline-img" src="https://dchtm6r471mui.cloudfront.net/hackpad.com_yGrkgnCFi2A_p.289460_1417982401305_Screenshot_2014-12-07-13-57-38.png" width="400px" faketext="*" contenteditable="false">
+<h1>Tutor Móvil de Tiempo Completo</h1>
 Objetivo:
 Desarrollar una aplicación móvil, que permita tomar el papel de tutor escolar y mantener a los padres de  familia informados sobre el aprovechamiento escolar de sus hijos, mediante la interacción de mensajes personalizados.
 
