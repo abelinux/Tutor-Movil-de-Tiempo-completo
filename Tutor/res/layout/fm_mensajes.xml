@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/panel"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-	android:paddingRight="@dimen/activity_horizontal_margin"
-    android:orientation="vertical">
-   	
-	<ListView android:id="@+id/list"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"/>
-	
-	<EditText
-	    android:id="@+id/mensaje"
-	    android:layout_below="@id/list"
-	    android:lines="5"
-	    android:inputType="textMultiLine"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"/>
-	
-	<Button android:id="@+id/enviar"
-	    android:layout_below="@id/mensaje"
-	    android:text="@string/mensajes_enviar"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content" />
-	
-</RelativeLayout>
+    android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent" 
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <TableLayout 
+        android:layout_weight="0" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <EditText android:id="@+id/mensaje" 
+                android:singleLine="false"
+                android:gravity="top"
+                android:layout_width="250dp"
+                android:layout_alignParentTop="true"/>
+
+            <Button android:layout_height="wrap_content" 
+                android:id="@+id/enviar" 
+                android:text="@string/mensajes_enviar" 
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>                  
+
+</LinearLayout>
