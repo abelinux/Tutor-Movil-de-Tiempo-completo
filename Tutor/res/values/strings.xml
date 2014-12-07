@@ -10,8 +10,8 @@
     <string name="main_mejoras">MEJORAS</string>
     <string name="main_monitoreo">MONITOREO</string>
 
-    <string name="login_usuario">7711568966</string>
-    <string name="login_clave">101187</string>
+    <string name="login_usuario"></string>
+    <string name="login_clave"></string>
     
     <string name="mensajes_enviar">ENVIAR</string>
     

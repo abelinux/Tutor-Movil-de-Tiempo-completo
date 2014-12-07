@@ -101,25 +101,25 @@ public class Fragment_Mensajes extends Fragment {
         pDialog.dismiss();
         try {
             lista_tutorados = json.getJSONArray(TAG_OS);
-            	for(int i = 0; i < lista_tutorados.length(); i++){
-	            	JSONObject c = lista_tutorados.getJSONObject(i);
-		            String ver = c.getString(TAG_NAME);
-		            String name = c.getString(TAG_VER);
-		            String api = c.getString(TAG_API);
-		            HashMap<String, String> map = new HashMap<String, String>();
-		            map.put(TAG_VER, ver);
-		            map.put(TAG_NAME, name);
-		            // map.put(TAG_API, api);
-		            oslist.add(map);
-		            
-		            list=(ListView) rootView.findViewById(R.id.list);
-		            
-		            adapter = new SimpleAdapter(rootView.getContext(), oslist,
-	                R.layout.list_v,
-                		new String[] { TAG_VER,TAG_NAME, TAG_API }, new int[] {R.id.nombre,R.id.plantel, R.id.nivel});
-			            // adapter.invalidateViews();
-			            
-			            list.setAdapter(adapter);
+            for(int i = 0; i < lista_tutorados.length(); i++){
+            	JSONObject c = lista_tutorados.getJSONObject(i);
+	            String ver = c.getString(TAG_NAME);
+	            String name = c.getString(TAG_VER);
+	            String api = c.getString(TAG_API);
+	            HashMap<String, String> map = new HashMap<String, String>();
+	            map.put(TAG_VER, ver);
+	            map.put(TAG_NAME, name);
+	            // map.put(TAG_API, api);
+	            oslist.add(map);
+	            
+	            list=(ListView) rootView.findViewById(R.id.list);
+	                     
+	            adapter = new SimpleAdapter(rootView.getContext(), oslist,
+                R.layout.list_v,
+                	new String[] { TAG_VER,TAG_NAME, TAG_API }, new int[] {
+	                    R.id.nombre,R.id.plantel, R.id.nivel});
+	            		
+	            		list.setAdapter(adapter);
 	            		list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             			@Override
 	                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -127,7 +127,6 @@ public class Fragment_Mensajes extends Fragment {
 	                    }
 	                });
             	}
-            	
         	} catch (JSONException e) {
         		e.printStackTrace();
         	}
